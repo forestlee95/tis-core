@@ -28,6 +28,8 @@ cmake_minimum_required(VERSION 3.18)
 
 project(libtritonserver LANGUAGES C CXX)
 
+set(CMAKE_CXX_FLAGS "-Wno-error=deprecated-declarations -Wno-deprecated-declarations ")
+
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release)
 endif()
